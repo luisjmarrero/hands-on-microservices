@@ -6,16 +6,16 @@ public interface ProductService {
 
     /**
      * Sample usage:
-     *
+     * <p>
      * curl -X POST $HOST:$PORT/product \
-     *   -H "Content-Type: application/json" --data \
-     *   '{"productId":123,"name":"product 123","weight":123}'
+     * -H "Content-Type: application/json" --data \
+     * '{"productId":123,"name":"product 123","weight":123}'
      *
      * @param body
      * @return
      */
     @PostMapping(
-            value    = "/product",
+            value = "/product",
             consumes = "application/json",
             produces = "application/json")
     Product createProduct(@RequestBody Product body);
@@ -27,13 +27,13 @@ public interface ProductService {
      * @return the product, if found, else null
      */
     @GetMapping(
-            value    = "/product/{productId}",
+            value = "/product/{productId}",
             produces = "application/json")
     Product getProduct(@PathVariable int productId);
 
     /**
      * Sample usage:
-     *
+     * <p>
      * curl -X DELETE $HOST:$PORT/product/1
      *
      * @param productId

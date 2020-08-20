@@ -30,44 +30,44 @@ public class Review {
         return productId;
     }
 
-    public int getReviewId() {
-        return reviewId;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public String getSubject() {
-        return subject;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public String getServiceAddress() {
-        return serviceAddress;
-    }
-
     public void setProductId(int productId) {
         this.productId = productId;
+    }
+
+    public int getReviewId() {
+        return reviewId;
     }
 
     public void setReviewId(int reviewId) {
         this.reviewId = reviewId;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public String getSubject() {
+        return subject;
     }
 
     public void setSubject(String subject) {
         this.subject = subject;
     }
 
+    public String getContent() {
+        return content;
+    }
+
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getServiceAddress() {
+        return serviceAddress;
     }
 
     public void setServiceAddress(String serviceAddress) {
