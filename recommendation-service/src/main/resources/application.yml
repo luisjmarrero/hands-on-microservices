@@ -1,0 +1,14 @@
+
+server.port: 7002
+server.error.include-message: always
+
+spring.data.mongodb:
+  host: localhost
+  port: 27017
+  database: recommendation-db
+
+logging:
+  level:
+    root: INFO
+    dev.luisjmarrero: DEBUG
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
